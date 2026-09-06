@@ -10,7 +10,6 @@ The analysis focused mainly on product prices, discounts, customer reviews, and 
 
 
 ## Project Objectives
-
 The main objectives of this project were to:
 
 - Clean and prepare raw Jumia product data.
@@ -25,7 +24,6 @@ The main objectives of this project were to:
 
 
 ## Dataset
-
 The dataset contains information about products listed on Jumia.
 
 The main fields include:
@@ -34,17 +32,13 @@ Products, Current Price, Old Price, Discount,Reviews, Rating.
 
 
 ## Workbook Structure
-
 The Excel workbook contains the following worksheets:
 
 ### 1. Raw Data
-
 Contains the original dataset.
-
 The raw data was preserved without overwriting it so that the original information could always be referenced.
 
 ### 2. Cleaned Data
-
 Contains the cleaned and prepared dataset.
 
 Additional columns were created for analysis, including:
@@ -56,7 +50,6 @@ Additional columns were created for analysis, including:
 The cleaned data was converted into an Excel Table named `TblProducts`.
 
 ### 3. Analysis
-
 Contains the main analysis and business findings.
 
 The analysis includes:
@@ -69,11 +62,9 @@ The analysis includes:
 - Recommendations
 
 ### 4. Pivot Tables
-
 Contains PivotTables used to summarize the data and support the dashboard visualizations.
 
 ### 5. Dashboard
-
 Contains the final interactive dashboard with:
 
 - Key Performance Indicators (KPIs)
@@ -82,16 +73,13 @@ Contains the final interactive dashboard with:
 - Trend analysis
 
 ### 6. Data Dictionary
-
 Contains descriptions of the dataset fields, assumptions, data quality checks, and cleaning procedures.
 
 
 # Data Cleaning and Preparation
-
 Before analyzing the data, several data quality issues were identified and addressed.
 
 ## Price Cleaning
-
 Some prices contained text such as:
 
 `KSh 1,525`
@@ -124,7 +112,6 @@ The review column was checked for invalid values, including negative review coun
 Negative review values were identified before correction so that the data-quality issue could be documented.
 
 ## Rating Categories.
-
 A new column called Rating Category was created.
 
 Products were classified as:
@@ -137,7 +124,6 @@ The formula used was:
 =IF(F2<3,"Poor",IF(F2<=4.5,"Average","Excellent"))
 
 ## Price Ctegories.
-
 A Price Category column was created using the current product price.
 
 The categories used were:
@@ -149,7 +135,6 @@ The formula used was:
 =IF(B2<=500,"Low Price",IF(B2<=1500,"Medium Price","High Price"))
 
 ##Discount Categories.
-
 A Discount Category column was also created.
 
 The categories were:
@@ -165,19 +150,15 @@ The formula used was:
 Several analyses were performed using Excel formulas, sorting, filtering, PivotTables, and charts.
 
 ## Trend Analysis
-
 The following relationships were analyzed:
 
 ## Discount vs Reviews
-
 This analysis examined whether products with higher discounts received more customer reviews.
 
 ## Rating vs Reviews
-
 This analysis examined whether highly rated products received more customer reviews.
 
 ## Price vs Rating
-
 This analysis compared product ratings across different price categories
 
 # Business Insights.
@@ -211,7 +192,6 @@ Finding:
 No Relations.
 
 # Recommendations
-
 Based on the analysis, the following recommendations can be made to Jumia sellers:
 
 1.Use discounts strategically rather than assuming that larger discounts always lead to higher customer engagement.
