@@ -1,4 +1,4 @@
-# Building an Interactive Excel Dashboard for E-commerce Product Analysis: A Case Study of Jumia Products
+# Building an Interactive Excel Dashboard for E-commerce Product Analysis: Jumia Products Excel Project.
 
 ## Project Overview
 
@@ -40,13 +40,13 @@ Products, Current Price, Old Price, Discount,Reviews, Rating.
 
 The Excel workbook contains the following worksheets:
 
-### 1. Raw_Data
+### 1. Raw Data
 
 Contains the original dataset.
 
 The raw data was preserved without overwriting it so that the original information could always be referenced.
 
-### 2. Cleaned_Data
+### 2. Cleaned Data
 
 Contains the cleaned and prepared dataset.
 
@@ -56,7 +56,7 @@ Additional columns were created for analysis, including:
 - Price Category
 - Discount Category
 
-The cleaned data was converted into an Excel Table named `tblProducts`.
+The cleaned data was converted into an Excel Table named `TblProducts`.
 
 ### 3. Analysis
 
@@ -69,10 +69,9 @@ The analysis includes:
 - Product performance analysis
 - Rating analysis
 - Pricing analysis
-- Business insights
 - Recommendations
 
-### 4. Pivot_Tables
+### 4. Pivot Tables
 
 Contains PivotTables used to summarize the data and support the dashboard visualizations.
 
@@ -85,15 +84,15 @@ Contains the final interactive dashboard with:
 - Product category breakdowns
 - Trend analysis
 
-### 6. Data_Dictionary
+### 6. Data Dictionary
 
-Contains descriptions of the dataset fields, assumptions, data-quality checks, and cleaning procedures.
+Contains descriptions of the dataset fields, assumptions, data quality checks, and cleaning procedures.
 
 ---
 
 # Data Cleaning and Preparation
 
-Before analyzing the data, several data-quality issues were identified and addressed.
+Before analyzing the data, several data quality issues were identified and addressed.
 
 ## Price Cleaning
 
@@ -105,7 +104,6 @@ These values needed to be converted into numerical values before calculations co
 
 The following Excel formula was used:
 
-```excel
 =VALUE(SUBSTITUTE(SUBSTITUTE(B2,"KSh ",""),",",""))
 
 ## Handling Price Ranges
@@ -139,7 +137,7 @@ Poor: Rating below 3
 Average: Rating from 3 to 4.5
 Excellent: Rating above 4.5
 
-The Excel formula used was:
+The formula used was:
 =IF(F2<3,"Poor",IF(F2<=4.5,"Average","Excellent"))
 
 ## Price Ctegories.
