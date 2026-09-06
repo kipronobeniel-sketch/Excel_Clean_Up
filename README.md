@@ -8,7 +8,6 @@ The project involved cleaning raw product data, performing analysis, creating Pi
 
 The analysis focused mainly on product prices, discounts, customer reviews, and ratings.
 
----
 
 ## Project Objectives
 
@@ -24,7 +23,6 @@ The main objectives of this project were to:
 - Build an interactive Excel dashboard.
 - Generate business insights and recommendations for Jumia sellers.
 
----
 
 ## Dataset
 
@@ -34,7 +32,6 @@ The main fields include:
 
 Products, Current Price, Old Price, Discount,Reviews, Rating.
 
----
 
 ## Workbook Structure
 
@@ -88,7 +85,6 @@ Contains the final interactive dashboard with:
 
 Contains descriptions of the dataset fields, assumptions, data quality checks, and cleaning procedures.
 
----
 
 # Data Cleaning and Preparation
 
